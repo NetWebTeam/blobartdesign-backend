@@ -60,8 +60,9 @@ class PageService {
                     $message
                 ",
             function ($message) {
-                $message->to("tobioluwole69@gmail.com")
-                    ->subject('Contact Form Mail');
+                $message->to("info@blobartdesign.com")
+                        ->bcc("orhan.ozkilic@neareasttechnology.com")
+                        ->subject('Contact Form Mail');
             });
 
         return response()->json(null, 204);
